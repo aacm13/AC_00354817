@@ -17,14 +17,14 @@ int     20h
 section .data
 
 numArray db 01,02,03,04,05,06,07,08,09,10 
-largo equ $-numArray    
-dividir equ 02 
+length equ $-numArray    
+divide equ 02 
 
 data:
-    MOV     BL, dividir
+    MOV     BL, divide
 
 for:
-    CMP     SI, largo
+    CMP     SI, length
     JE      end
 
     MOV     AL, [BP+SI]
