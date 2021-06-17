@@ -44,4 +44,4 @@ org 100h
 
 section .data
 
-caracter DB "Alvaro Antonio Corpeno Molina $"
+caracter DB 'Alvaro',13,10,'Antonio',13,10,'Corpeno',13,10,'Molina',13,10,'$'
